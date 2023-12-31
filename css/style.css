@@ -1,0 +1,401 @@
+@import url('https://fonts.googleapis.com/css2?family=Days+One&family=Lato:wght@300&family=Roboto+Condensed:wght@300;500&family=Roboto:wght@300;500&family=Ubuntu:wght@300;500&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+html ,body {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    background-color: #E1E1D2;
+}
+
+div {
+    animation: slideInUp 1s ease-in-out;
+}
+
+/* transition started */
+
+@keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  
+  @keyframes slideInRight {
+    from {
+      opacity: 0;
+      transform: translateX(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  @keyframes slideInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  /* transition finished */
+
+h1,h2,h3,h4,h5,h6 {
+    transition: transform 0.3s ease-in-out;
+    font-family: 'Days One';
+}
+
+p,a,pre {
+    transition: transform 0.3s ease-in-out;
+    font-weight: 500;
+    text-decoration: none;
+    color: white;
+    font-family: 'Roboto Condensed';
+}
+
+/*************** header start *********************/
+
+li {
+    list-style-type: none;
+    color: white;
+}
+
+header {
+    animation: fadeInDown 1s ease-in-out;
+    position: sticky;
+    width: 100%;
+    height: 60px;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    color: white;
+    background-color: black;
+    top: 0;
+}
+
+header img {
+    margin-left: 20px;
+    height: 40px;
+}
+
+header ul {
+    margin-left: 13vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10vw;
+    animation: slideInRight 1s ease-in-out;
+
+}
+
+header li {
+    justify-content: space-between;
+}
+
+main {
+    animation: fadeIn 1s ease-in-out;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: rgb(228, 133, 149);
+}
+
+i:hover {
+    color: rgb(228, 133, 149);
+}
+
+header h1 {
+    color: rgb(228, 133, 149);   
+}
+/***************** Header Finished *****************/
+
+/***************** main page started ***************/
+
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.main .box1 {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+    width: 70vw;
+    background-color: rgb(228, 133, 149);
+    border: 3px solid black;
+    border-radius: 10px;
+}
+
+.main p,h1 {
+    color: black;
+    font-weight: bold;
+}
+
+.main .box1 img {
+    height: 10vw;
+}
+
+.main .box1 h1 {
+    font-size: 2.5vw;
+}
+
+.main .box1 p {
+    margin: 20px 60px;
+}
+
+/* box 1 finished... box 2 starting */
+
+.box2 {
+    background-color: #ff6c52;
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+    width: 70vw;
+    border: 3px solid black;
+    border-radius: 10px;
+}
+
+
+.main p,h1 {
+    color: black;
+    font-weight: bold;
+}
+
+.main .box2 img {
+    height: 13vw;
+}
+
+.main .box2 h1 {
+    font-size: 2.5vw;
+}
+
+.main .box2 p {
+    margin: 20px 60px;
+}
+
+/***************** main page finished ***************/
+
+/***************** flavors of donuts starting.. *******/
+
+#flavors {
+    margin-top: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* flavors row 1 starting */
+
+.flavorsRow1 {
+    margin: 0px 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.flavorsRow1 img {
+    height: 10vw;
+}
+
+.flavorsRow1 div {
+    margin-bottom: 10px;
+    padding: 7vw;
+    background-color: #fff;
+    border-radius: 50%;
+}
+
+.flavorsRow1 h2 {
+    margin: 0px 15px;
+    font-size: 2vw;
+}
+
+/* flavors row 1 finished 2 starting */
+
+.flavorsRow2 {
+    margin: 0px 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.flavorsRow2 img {
+    height: 10vw;
+}
+
+.flavorsRow2 div {
+    margin-bottom: 10px;
+    padding: 7vw;
+    background-color: #fff;
+    border-radius: 50%;
+}
+
+.flavorsRow2 h2 {
+    margin: 0px 15px;
+    font-size: 2vw;
+}
+
+/* flavors row 2 finished 3 starting */
+
+.flavorsRow3 {
+    margin: 0px 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.flavorsRow3 img {
+    height: 10vw;
+}
+
+.flavorsRow3 div {
+    margin-bottom: 10px;
+    padding: 7vw;
+    background-color: #fff;
+    border-radius: 50%;
+}
+
+.flavorsRow3 h2 {
+    margin: 0px 15px;
+    font-size: 2vw;
+}
+
+/* flavors row 3 finished product/donuts starting */
+
+/* product/donuts starting */
+
+#product {
+    margin-top: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.product img {
+    height: 13vw;
+}
+
+.product button {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: rgb(228, 133, 149);
+    color: black;
+    font-weight: 800;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+.donutsRow1 div, .donutsRow2 div, .donutsRow3 div{
+    width: 35vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+    padding: 6vw;
+    background-color: #fff;
+    border: 2px solid black;
+    border-radius: 10%;
+}
+
+.product .donutsRow1, .donutsRow2, .donutsRow3 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.product div {
+    margin: 20px;
+}
+
+/* product/donuts finished footer starting */
+
+footer {
+border-top: 4px solid rgb(228, 133, 149);
+background-color: #000000;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+margin-top: 100px;
+}
+
+footer img {
+    margin: 10px;
+    height: 9vw;
+}
+
+footer h1, p {
+    margin-bottom: 10px;
+    color: rgb(228, 133, 149);
+}
+
+footer button {
+    padding: 10px;
+    border: 2px solid transparent;
+    margin-bottom: 20px;
+    background-color: rgb(228, 133, 149);
+    color: black;
+    border-radius: 20px;
+}
